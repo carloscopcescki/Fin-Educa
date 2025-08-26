@@ -75,6 +75,11 @@ footer {
     color: white;
 }
 
+.section-title img{
+    width: 250px;
+    object-fit: cover;
+}
+
 .section-subtitle {
     font-size: 20px;
     font-family: "Poppins", sans-serif;
