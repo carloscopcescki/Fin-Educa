@@ -1,0 +1,445 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #040720;
+}
+
+section {
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h3 {
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+div{
+    display: inline-block;
+}
+
+.logo img {
+    padding-top: 0px;
+    width: 210px;
+    height: 180px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    max-width: 1900px;
+}
+
+.section-title {
+    font-size: 55px;
+    font-family: "Poppins", sans-serif;
+    font-style: bold;
+    color: white;
+}
+
+.section-subtitle {
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.section-text {
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    font-weight: 280;
+    color: white;
+}
+
+.tradingview-widget-container {
+    width: 100%;
+    justify-content: center;
+    z-index: 0;
+}
+
+#landing-page-content {
+    padding-right: 250px;
+    max-width: 1000px;
+}
+
+#landing-page-image {
+    padding-top: 30px;
+}
+
+#landing-page-image img{
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+}
+
+#chtl-inline-bot {
+    width: 1200px; 
+    height: 520px;
+}
+
+.section-button{
+    font-family: "Poppins", sans-serif;
+    color: white;
+    background-color: rgb(39, 39, 80);
+    line-height: 120px;
+    font-size: 23px;
+    padding: 12px;
+    padding-right: 25px;
+    padding-left: 25px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.section-button:hover{
+    transition: 0.5s;
+    color:grey;
+}
+
+.section-content-home{
+    display: flexbox;
+}
+
+.section-content p, label{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+}
+
+.section-content-sobre p{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+}
+
+#section-content-1-perfil{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+}
+
+.text{
+    background: rgb(39, 39, 80);
+    border-radius: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1500px;
+    box-shadow: 9px 6px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 25px 25px;
+}
+
+.participantes{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+#foto-participante p{
+    text-align: center;
+}
+
+#foto-participante img{
+    object-fit: cover;
+    width: 130px;
+    height: 130px;
+    border: 3px solid rgb(21, 13, 58);
+    border-radius: 50%;
+}
+
+.section-subtitle{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+}
+
+#section-content-1-calculadora{
+    padding-right: 10px;
+}
+
+#section-content-1{
+    max-width: 750px;
+    margin-right: 10px;
+}
+
+#section-content-2{
+    max-width: 750px;
+}
+
+#section-content-3{
+    max-width: 800px;
+}
+
+input[type=number]{
+    border: 3px solid rgb(21, 13, 58);
+    background: white;
+    width: 100px;
+    height: 30px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    border-radius: 4px;
+}
+
+label, input{
+    display: block;
+    margin-bottom: 10px;
+}
+
+select{
+    display: block;
+    font-family: "Poppins", sans-serif;
+    border-radius: 5px;
+    background-color: white;
+    border: 3px solid rgb(39, 39, 80);
+    height: 40px;
+    width: 200px;
+}
+
+button{
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    background-color: white;
+    border: 3px solid rgb(39, 39, 80);
+    color: rgb(39, 39, 80); 
+    height: 50px;
+    width: 120px;
+}
+
+h2{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+}
+
+.section-content-calc{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#section-content-2-calculadora{
+    margin-right: 10px;
+    max-width: 600px;
+}
+
+.section-content a{
+    color: rgb(170, 182, 235);
+}
+
+#section-content-1-perfil{
+    max-width: 500px;
+}
+
+#section-content-2-perfil{
+    max-width: 500px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#section-content-3-perfil{
+    max-width: 500px;
+}
+
+.content-text{
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.section-perfil{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1560px) {
+    .container {
+        flex-direction: column;
+        display: flex;
+        height: auto;
+        max-width: 80%;
+    }
+
+    .section-perfil {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .section-title {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .section-content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #section-content-1, #section-content-2{
+        max-width: 90%;
+        padding-bottom: 15px;
+    }
+
+    #section-content-1-perfil, #section-content-2-perfil, #section-content-3-perfil {
+        margin: 0;
+        padding-bottom: 20px;
+    }
+
+    .text h2{
+        font-size: 18px;
+    }
+
+    .text p{
+        font-size: 14px;
+    }
+
+    #landing-page-content {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    #landing-page-image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .section-button {
+        font-size: 20px;
+        line-height: 100px;
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    .section-content-home {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .participantes {
+        flex-direction: grid;
+        align-items: center;
+    }
+
+    #foto-participante img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .section-subtitle {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .section-content-calc label {
+        font-size: 13px;
+    }
+
+    .section-content-calc{
+        display: block;
+        max-width: 100%;
+    }
+
+    #section-content-1-calculadora{
+        padding-bottom: 15px;
+    }
+
+    .section-content-calc button {
+        font-size: 15px;
+        height: 40px;
+        width: 100px;
+    }
+
+    .section-content-calc h3{
+        font-size: 14px;
+    }
+
+    .section-content-calc h2{
+        font-size: 15px;
+    }
+
+    #section-content-2-calculadora{
+        padding-bottom: 15px;
+    }
+
+    .image-menu img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .image label {
+        font-size: 15px;
+    }
+
+    .content-text {
+        font-size: 18px;
+    }
+
+    #chtl-inline-bot {
+        width: 750px; 
+        height: 520px;
+    }
+
+    .tradingview-widget-container {
+        bottom: 750px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #landing-page-image img{
+        display: none;
+    }
+    
+    .section-content-sobre, .section-sobre p{
+        flex-direction: column;
+        align-items: center;
+        max-width: 500px;
+        font-size: 10px;
+    }
+
+    .section-content-sobre h2 {
+        font-size: 15px
+    }
+
+    #foto-participante img {
+        width: 60px;
+        height: 60px;
+    }
+
+    #foto-participante p{
+        display: none;
+    }
+
+    #chtl-inline-bot {
+        width: 400px; 
+        height: 520px;
+    }
+}

@@ -1,0 +1,18 @@
+@media (max-width: 768px) {
+    .section-content-home,
+    .section-content,
+    .image-menu {
+        flex-direction: column;
+    }
+    #landing-page-content,
+    #landing-page-image,
+    #section-content-1,
+    #section-content-2,
+    #section-content-1-calculadora,
+    #section-content-2-calculadora,
+    #section-content-3 {
+        flex: none;
+        width: 100%;
+        margin: 10px 0;
+    }
+}

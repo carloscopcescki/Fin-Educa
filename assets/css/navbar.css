@@ -1,0 +1,200 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 65px;
+  padding: 120px 60px;
+  z-index: 1;
+}
+
+.navmenu {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  right: 0px;
+  height: 75px;
+  gap: 50px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  transition: background-color 0.3s, color 0.3s;
+  background-color: rgb(39, 39, 80);
+}
+
+#nav-title {
+  font-size: 25px;
+  margin-right: 250px;
+  font-weight: bold;
+  color: white;
+}
+
+#nav-title:hover {
+  color: rgb(207, 207, 207);
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
+}
+
+.nav-link {
+  color: white;
+  transition: all 0.2s;
+  position: relative;
+  display: inline-block;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+  color: rgb(129, 129, 129);
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
+}
+
+.nav-link::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  pointer-events: none;
+}
+
+.hamburguer {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 28px;
+  height: 3px;
+  border-radius: 2px;
+  margin: 5px auto;
+  background: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-item-drop:hover .drop-down {
+  display: block;
+}
+
+.nav-item-drop {
+  position: relative;
+  bottom: 2.5px;
+}
+
+.dropdown-icon {
+  font-size: 20px;
+  position: relative;
+  left: 5px;
+  top: 5px;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out all;
+  color: white;
+}
+
+.nav-item-drop:hover .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+
+.drop-down {
+  background-color: rgb(39, 39, 80);
+  display: none;
+  position: absolute;  
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  left: 0;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  z-index: 1000;
+  text-align: left;
+}
+
+.drop-down li {
+  width: 200px;
+}
+
+.drop-down li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.drop-down a {
+  font-size: 16px;
+}
+
+@media (max-width: 1300px) {
+  .navbar {
+    right: 0px;
+  }
+  
+  .hamburguer {
+    display: block;
+    position: fixed;
+    top: 15px;           
+    right: 20px;
+    margin-left: 0px;
+    background: rgb(39, 39, 80);
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 1002;
+  }
+
+  .hamburguer.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburguer.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburguer.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .navmenu {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    left: -100%;
+    right: 0;
+    top: 0px;
+    color: rgb(58, 58, 58);
+    border-radius: 0 0 20px 20px;
+    background-color: rgb(39, 39, 80);
+    flex-direction: column;
+    width: 100%;
+    transition: 0.3s;
+    align-items: flex-start;
+    padding-left: 60px;
+    gap: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: auto;
+  }
+
+  .nav-item {
+    right: 0;
+    left: auto;
+  }
+
+  .navmenu.active {
+    left: 0;
+  }
+
+  .center {
+    top: 0%;
+  } 
+}
