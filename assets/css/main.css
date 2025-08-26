@@ -95,6 +95,15 @@ footer {
     color: white;
 }
 
+.section-text-about {
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    max-width: 1050px;
+    font-weight: 280;
+    color: white;
+}
+
 .tradingview-widget-container {
     width: 100%;
     justify-content: center;
