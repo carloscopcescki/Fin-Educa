@@ -106,7 +106,6 @@
   transform: rotate(180deg);
 }
 
-
 .drop-down {
   background-color: rgb(39, 39, 80);
   display: none;
@@ -122,12 +121,12 @@
 }
 
 .drop-down li {
-  width: 200px;
+  width: 250px;
 }
 
 .drop-down li a {
   display: block;
-  padding: 10px;
+  padding: 5px;
   text-decoration: none;
 }
 
@@ -135,7 +134,7 @@
   font-size: 16px;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1450px) {
   .navbar {
     right: 0px;
   }
@@ -179,7 +178,7 @@
     transition: 0.3s;
     align-items: flex-start;
     padding-left: 60px;
-    gap: 30px;
+    gap: 10px;
     padding-top: 20px;
     padding-bottom: 20px;
     height: auto;

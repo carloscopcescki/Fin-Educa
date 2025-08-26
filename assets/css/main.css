@@ -38,10 +38,24 @@ div{
     display: inline-block;
 }
 
+footer {
+    background-color: rgb(39, 39, 80);
+    text-align: center;
+    width: 100%;
+    height: 70px;
+}
+
+.portfolio-footer p {
+    font-family: "Poppins", sans-serif;
+    color: rgb(243, 243, 243);
+    font-size: 16px;
+    padding-top: 25px;
+}
+
 .logo img {
     padding-top: 0px;
-    width: 210px;
-    height: 180px;
+    width: 150px;
+    height: auto;
 }
 
 .container {
@@ -92,6 +106,8 @@ div{
 }
 
 #landing-page-image img{
+    object-fit: cover;
+    object-position: center;
     border-radius: 50%;
     width: 350px;
     height: 350px;
@@ -281,6 +297,42 @@ h2{
     flex-wrap: wrap;
 }
 
+.image-menu img{
+    width: 230px;
+    height: 220px;
+    position: absolute;
+}
+
+#image-item {
+    position: relative;
+    top: 0;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#image-item:hover{
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.image-menu {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+}
+
+.image label{
+    position: relative;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
 @media screen and (max-width: 1560px) {
     .container {
         flex-direction: column;
@@ -323,13 +375,13 @@ h2{
     }
 
     #landing-page-content {
-        padding-right: 0;
-        text-align: center;
+        max-width: 900px;
     }
 
     #landing-page-image img {
-        width: 150px;
-        height: 150px;
+        width: 250px;
+        height: 250px;
+        margin-bottom: 50px;
     }
 
     .section-button {
@@ -413,11 +465,26 @@ h2{
     }
 }
 
-@media screen and (max-width: 768px) {
-    #landing-page-image img{
+@media screen and (max-width: 1500px) {
+    #landing-page-content {
+        padding-right: 0;
+        text-align: left;
+        max-width: 630px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #landing-page-content {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    #landing-page-image img {
         display: none;
     }
-    
+}
+
+@media screen and (max-width: 768px) {
     .section-content-sobre, .section-sobre p{
         flex-direction: column;
         align-items: center;
