@@ -17,9 +17,9 @@ function calcularReserva() {
 
 function limparCampos() {
     document.getElementById('custoFixo').value = 0;
-    document.getElementById('guarda').value = 0;
+    document.getElementById('guarda').value = 1;
     document.getElementById('salarioMes').value = 1;
-    document.getElementById('reservaEmergencia').textContent = 'Reserva de emergência: R$ 0.00';
+    document.getElementById('reservaEmergencia').textContent = 'Reserva de emergência: R$ 0,00';
     document.getElementById('mesesCompletar').textContent = 'Meses para completar a reserva: ';
     document.getElementById('guardando').textContent = 'Guardando: ';
 }
