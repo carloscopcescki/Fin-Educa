@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>EducaFin</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media="screen" href="assets/css/main.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/navbar.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/responsive.css'>
+    <link rel="stylesheet" type='text/css' media='screen' href="assets/css/news.css">
+    <link rel='icon' type="image/x-icon" href="assets/img/logo.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <script src="assets/js/news.js" defer></script>
+</head>
+<body>
+
+<!-- Barra de Navegação -->
+
+<header>
+    <nav class="navbar">
+        <ul class="navmenu">
+            <li class="nav-item"><div class="logo"><a href="#homepage"><img src="assets/img/logo_picture.png"></a></div></li>
+            <li class="nav-item"><a href="#homepage" class="nav-link">HOME</a></li>
+            <li class="nav-item"><a href="#noticias" class="nav-link">NOTÍCIAS</a></li>
+            <li class="nav-item"><a href="#perfis" class="nav-link">PERFIL</a></li>
+            <li class="nav-item-drop"><a href="#investimento" class="nav-link">INVESTIMENTOS</a>
+                <span class="material-icons dropdown-icon">
+                    arrow_drop_down
+                </span>
+                </a>
+                <ul class="drop-down">
+                    <li><a href="https://www.b3.com.br/pt_br/produtos-e-servicos/negociacao/renda-variavel/acoes.htm" target="_blank" rel="noopener noreferrer" class="nav-link">Ações</a></li>
+                    <li><a href="https://www.b3.com.br/pt_br/produtos-e-servicos/negociacao/renda-variavel/fundos-de-investimento-imobiliario-fii.htm" target="_blank" rel="noopener noreferrer" class="nav-link">Fundos</a></li>
+                    <li><a href="https://www.b3.com.br/pt_br/produtos-e-servicos/negociacao/renda-variavel/brazilian-depositary-receipts-bdrs-patrocinados-niveis-i-ii-e-iii.htm" target="_blank" rel="noopener noreferrer" class="nav-link">BDRs</a></li>
+                    <li><a href="https://www.b3.com.br/pt_br/produtos-e-servicos/negociacao/renda-variavel/etf-de-renda-variavel.htm" target="_blank" rel="noopener noreferrer" class="nav-link">ETFs</a></li>
+                    <li><a href="https://www.b3.com.br/pt_br/produtos-e-servicos/negociacao/criptoativos/" target="_blank" rel="noopener noreferrer" class="nav-link">Criptomoedas</a></li>
+                    <li><a href="https://www.b3.com.br/pt_br/produtos-e-servicos/tesouro-direto/informacoes-tecnicas.htm" target="_blank" rel="noopener noreferrer" class="nav-link">Tesouro Direto</a></li>
+                    <li><a href="https://www.b3.com.br/pt_br/produtos-e-servicos/negociacao/commodities/" target="_blank" rel="noopener noreferrer" class="nav-link">Commodities</a></li>
+                    <li><a href="https://www.b3.com.br/pt_br/produtos-e-servicos/negociacao/renda-fixa/certificado-de-recebiveis-do-agronegocio.htm" target="_blank" rel="noopener noreferrer" class="nav-link">Títulos privados</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="#ferramentas" class="nav-link" id="last-item">FERRAMENTAS</a></li>
+            <li class="nav-item"><a href="#sobre" class="nav-link" id="last-item">SOBRE</a></li>
+            <li class="nav-item-drop"><a class="nav-link">CONTEÚDO</a>
+                <span class="material-icons dropdown-icon">
+                    arrow_drop_down
+                </span>
+                </a>
+                <ul class="drop-down">
+                    <li><a href="https://www.b3.com.br/pt_br/para-voce" target="_blank" rel="noopener noreferrer" class="nav-link">Portal - B3</a></li>
+                    <li><a href="https://www.gov.br/investidor/pt-br/investir/como-investir" target="_blank" rel="noopener noreferrer" class="nav-link">Como investir ?</a></li>
+                    <li><a href="https://edu.b3.com.br/?utm_medium=site&utm_source=bora%20investir&utm_campaign=conheca%20a%20plataforma" target="_blank" rel="noopener noreferrer" class="nav-link">Cursos</a></li>
+                    <li><a href="https://borainvestir.b3.com.br/videos/" target="_blank" rel="noopener noreferrer" class="nav-link">Vídeos</a></li>
+                    <li><a href="https://borainvestir.b3.com.br/objetivos-financeiros/investir-melhor/reserva-de-emergencia-o-que-e-e-como-montar-a-sua/" target="_blank" rel="noopener noreferrer" class="nav-link">Reserva de emergência</a></li>
+                </ul>
+            </li>
+            <li class="nav-item-drop"><a class="nav-link" id="last-item">ACESSE</a>
+                <span class="material-icons dropdown-icon">
+                    arrow_drop_down
+                </span>
+                </a>
+                <ul class="drop-down">
+                    <li><a href="https://www.investidor.b3.com.br/login?utm_source=borainvestir&utm_medium=menu&utm_campaign=paravoce" target="_blank" rel="noopener noreferrer" class="nav-link">Área do investidor - B3</a></li>
+                    <li><a href="https://www.tesourodireto.com.br/" target="_blank" rel="noopener noreferrer" class="nav-link">Tesouro Direto</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class = "hamburguer">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav> 
+</header>
+
+<!-- Texto Principal -->
+
+<section id="homepage">
+    <div class="container">
+        <div class="section-content-home">
+            <div id="landing-page-content">
+                <h1><span class="section-title"><img src="assets/img/logo_picture.png"></span>
+                <h2><span class="section-subtitle">Uma nova maneira de aprender sobre educação financeira.</span></h2>
+                <br>
+                <h2><span class="section-text">Pensado especialmente para estudantes que querem conquistar autonomia financeira com conhecimento e confiança.</span></h2>
+                <br>
+                <h2><span class="section-text">Responda o questionário abaixo e descubra agora o seu perfil de investidor.</span></h2>
+                <a href="https://interacty.me/projects/51079c1383bc351d" target="_blank" rel="noopener noreferrer"><span class="section-button">Questionário</span></a>&nbsp;
+                <a href="#perfis"><span class="section-button">Perfil</span></a>
+            </div>
+            <div id="landing-page-image">
+                <a title="Imagem gerada com IA"><img src="assets/img/home_picture.png"></a>
+            </div>
+            <br>
+            <br>
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                    <div class="tradingview-widget-copyright"><a href="https://br.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text"></span></a></div>
+                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+                        {
+                        "symbols": [
+                        {
+                            "proName": "INDEX:IBOV",
+                            "title": ""
+                        },
+                        {
+                            "proName": "FX_IDC:USDBRL",
+                            "title": ""
+                        },
+                        {
+                            "proName": "BMFBOVESPA:PETR4",
+                            "title": ""
+                        },
+                        {
+                            "proName": "BMFBOVESPA:VALE3",
+                            "title": ""
+                        },
+                        {
+                            "proName": "BMFBOVESPA:BBAS3",
+                            "title": ""
+                        },
+                        {
+                            "proName": "BMFBOVESPA:ITUB4",
+                            "title": ""
+                        },
+                        {
+                            "proName": "BMFBOVESPA:B3SA3",
+                            "title": ""
+                        },
+                        {
+                            "proName": "BCBA:BBDC3",
+                            "title": ""
+                        },
+                        {
+                            "proName": "BMFBOVESPA:EGIE3",
+                            "title": ""
+                        },
+                        {
+                            "proName": "BMFBOVESPA:GGBR4",
+                            "title": ""
+                        },
+                        {
+                            "proName": "BMFBOVESPA:CMIN3",
+                            "title": ""
+                        },
+                        {
+                            "proName": "BMFBOVESPA:SAPR4",
+                            "title": ""
+                        },
+                        {
+                            "proName": "BMFBOVESPA:SBSP3",
+                            "title": ""
+                        },
+                        {
+                            "proName": "BMFBOVESPA:VIVT3",
+                            "title": ""
+                        },
+                        {
+                            "proName": "BMFBOVESPA:ROXO34",
+                            "title": ""
+                        },
+                        {
+                            "proName": "BMFBOVESPA:INBR32",
+                            "title": ""
+                        },
+                        {
+                            "proName": "BITSTAMP:BTCUSD",
+                            "title": ""
+                        },
+                        {
+                            "proName": "BITSTAMP:ETHUSD",
+                            "title": ""
+                        }
+                        ],
+                        "colorTheme": "dark",
+                        "locale": "br",
+                        "largeChartUrl": "",
+                        "isTransparent": true,
+                        "showSymbolLogo": true,
+                        "displayMode": "regular"
+                    }
+                        </script>
+                </div>
+        </div>
+    </div>
+</section>
+
+<script> window.chtlConfig = { chatbotId: "6471858276" } </script>
+<script async data-id="8552996429" id="chtl-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
+
+<section id="noticias">
+    <div class="container">
+        <div class="section-content">
+            <h1><span class="section-title">Notícias</span></h1>
+            <br>
+            <div id="news-cards"></div>
+        </div>
+    </div>
+</section>
+
+<!-- Seção Perfil -->
+
+<section id="perfis">
+    <div class="container">
+        <div class="section-content">
+            <h1><span class="section-title">Perfis de Investidor</span></h1>
+            <br>
+            <div class="section-perfil">
+                <div id="section-content-1-perfil">
+                    <div class="text">
+                        <h2><span class="section-subtitle">Conservador</span></h2>
+                        <p>&nbsp&nbspO investidor conservador prioriza a segurança em suas aplicações e prefere evitar riscos. Durante a sua diversificação de investimentos, o conservador busca manter a maior parte da sua carteira em produtos de renda fixa.</p>
+                        <br>
+                        <p><b>Investimentos que combinam com o perfil:</b></p>
+                        <p>&nbsp•&nbspTesouro Direto</p>
+                        <p>&nbsp•&nbspCDB</p>
+                        <p>&nbsp•&nbspLCI/LCA</p>
+                        <p>&nbsp•&nbspDebêntures</p>
+                        <br>
+                        <p><a href="https://www.c6bank.com.br/blog/perfil-conservador" target="_blank" rel="noopener noreferrer">Veja mais sobre perfil conservador</a></p>
+                    </div>
+                </div>
+                <div id="section-content-2-perfil">
+                    <div class="text">
+                        <h2><span class="section-subtitle">Moderado</span></h2>
+                        <p>&nbsp&nbspO investidor moderado é aquele que gosta da segurança porém, possui tolerância a riscos de longo prazo. Busca equilibrar a rentabilidade versus risco, optando por investimentos mais arriscados a depender da situação.</p>
+                        <br>
+                        <p><b>Investimentos que combinam com o perfil:</b></p>
+                        <p>&nbsp•&nbspTítulos de renda fixa (Tesouro, CDB, LCI, etc.)</p>
+                        <p>&nbsp•&nbspFundos imobiliários (FIIs)</p>
+                        <p>&nbsp•&nbspFundos de Investimento</p>
+                        <p>&nbsp•&nbspTítulos públicos</p>
+                        <br>
+                        <p><a href="https://www.c6bank.com.br/blog/perfil-moderado" target="_blank" rel="noopener noreferrer">Veja mais sobre perfil moderado</a></p>
+                    </div>
+                </div>
+                <div id="section-content-3-perfil">
+                    <div class="text">
+                        <h2><span class="section-subtitle">Arrojado</span></h2>
+                        <p>&nbsp&nbspO investidor arrojado possui os rendimentos como sua prioridade. Possui conhecimento do mercado, procura sempre boa rentabilidade e aceita exposições ao risco em busca de ganhos maiores que a inflação a médio e longo prazo.</p>
+                        <br>
+                        <p><b>Investimentos que combinam com o perfil:</b></p>
+                        <p>&nbsp•&nbspAções</p>
+                        <p>&nbsp•&nbspFundos imobiliários (FIIs)</p>
+                        <p>&nbsp•&nbspFundos de Investimento</p>
+                        <p>&nbsp•&nbspCriptomoedas</p>
+                        <br>
+                        <p><a href="https://www.c6bank.com.br/blog/perfil-arrojado" target="_blank" rel="noopener noreferrer">Veja mais sobre perfil arrojado</a></p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <h2><span class="content-text">* Antes de investir, é recomendado que todo e qualquer investidor possua uma reserva de emergência.</span></h2>
+        </div>
+    </div>
+</section>
+
+<!-- Seção Proposta -->
+
+<section id="investimento">
+    <div class="container">
+        <div class="section-content">
+            <h1><span class="section-title">Tipos de Investimentos</span></h1>
+            <br>
+            <div id="section-content-1">
+                <div class="text">
+                    <h2><span class="section-subtitle">Renda Fixa</span></h2>
+                    <p>&nbsp&nbspA renda fixa é uma forma de investimento onde o investidor empresta dinheiro para uma instituição (governo, bancos, empresas) e, em troca, recebe juros sobre o valor emprestado.</p>
+                    <p>&nbsp&nbspEsses investimentos são considerados de baixo risco em comparação com a renda variável, pois oferecem previsibilidade de retorno.</p>
+                    <p>&nbsp&nbspOs investimentos em renda fixa possuem um prazo de vencimento e podem ter a rentabilidade definida (prefixada) ou vinculada a um índice (pós-fixada).</p>
+                    <br>
+                    <p><b>&nbsp&nbspExemplos:</b></p>
+                    <p>&nbsp•&nbspTesouro Direto: Títulos públicos federais, como o Tesouro Selic, Tesouro IPCA+ e Tesouro Prefixado</p>
+                    <p>&nbsp•&nbspCDB: Emitido por bancos, pode ser prefixado ou pós-fixado</p>
+                    <p>&nbsp•&nbspLCI/LCA: Títulos isentos de Imposto de Renda para pessoa física, usados para financiar setores imobiliário e agronegócio</p>
+                    <p>&nbsp•&nbspDebêntures: Títulos de dívida emitidos por empresas</p>
+                    <br>
+                    <p>Veja mais sobre Renda Fixa em: <a href="https://borainvestir.b3.com.br/tipos-de-investimentos/renda-fixa/" target="_blank" rel="noopener noreferrer">&nbsp&nbspB3 - Tudo sobre Renda Fixa</a></p>
+                </div>
+            </div>
+            <div id="section-content-2">
+                <div class="text">
+                    <h2><span class="section-subtitle">Renda Variável</span></h2>
+                    <p>&nbsp&nbspA renda variável refere-se a investimentos cujo retorno não é previsível e pode variar conforme as condições do mercado. Mais arriscado em comparação a renda fixa, mas oferece a possibilidade de retornos mais altos.</p>
+                    <p>&nbsp&nbspO investidor adquire uma participação em um ativo cujo valor pode oscilar ao longo do tempo. O desempenho desses investimentos está sujeito a fatores como desempenho econômico, decisões empresariais, mudanças políticas e outros eventos de mercado.</p>
+                    <br>
+                    <p><b>&nbsp&nbspExemplos:</b></p>
+                    <p>&nbsp•&nbspAções: Participação no capital social de empresas negociadas na bolsa</p>
+                    <p>&nbsp•&nbspFundos imobiliários (FIIs): Fundos que investem em imóveis ou ativos do setor imobiliário</p>
+                    <p>&nbsp•&nbspETFs: Fundos que replicam índices de mercado e são negociados na bolsa</p>
+                    <p>&nbsp•&nbspCriptomoedas: Moedas digitais descentralizadas, criadas em rede blockchain a partir de sistemas avançados de criptografia</p>
+                    <br>
+                    <p>Veja mais sobre Renda Variável em: <a href="https://borainvestir.b3.com.br/tipos-de-investimentos/renda-variavel/" target="_blank" rel="noopener noreferrer">&nbsp&nbspB3 - Tudo sobre Renda Variável</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Seção Ferramentas -->
+
+<section id="ferramentas">
+    <div class="container">
+        <div class="section-content">
+            <h1><span class="section-title">Ferramentas</span></h1>
+            <br>
+            <div class="image-menu">
+                <div class="image">
+                    <a href="/public/pages/juros_simples.html" title="Imagem gerada com IA"><img src="assets/img/compostos.png" id="image-item"></a>
+                    <br>
+                    <br>
+                    <label>Juros Simples</label>
+                </div>
+
+                <div class="image">
+                    <a href="/public/pages/juros_compostos.html" title="Imagem gerada com IA"><img src="assets/img/compostos.png" id="image-item"></a>
+                    <br>
+                    <br>
+                    <label>Juros Compostos</label>
+                </div>
+
+                <div class="image">
+                    <a href="https://pystockdash.streamlit.app/" title="Imagem gerada com IA" target="_blank" rel="noopener noreferrer"><img src="assets/img/monitor.png" id="image-item"></a>
+                    <br>
+                    <br>
+                    <label>Monitor de Ativos</label>
+                </div>
+            </div>
+            <br>
+            <div class="image-menu">
+                <div class="image">
+                    <a href="https://www.tesourodireto.com.br/simuladores/calculadora-avancada" title="Imagem gerada com IA" target="_blank" rel="noopener noreferrer"><img src="assets/img/ouro.png" id="image-item"></a>
+                    <br>
+                    <br>
+                    <label>Tesouro Direto</label>
+                </div>
+
+                <div class="image">
+                    <a href="/public/pages/milhao.html" title="Imagem gerada com IA"><img src="assets/img/milhao.png" id="image-item"></a>
+                    <br>
+                    <br>
+                    <label>Primeiro Milhão</label>
+                </div>
+
+                <div class="image">
+                    <a href="/public/pages/reserva.html" title="Imagem gerada com IA"><img src="assets/img/calculadora.png" id="image-item"></a>
+                    <br>
+                    <br>
+                    <label>Reserva de Emergência</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Seção Sobre -->
+
+<section id="sobre">
+    <div class="container">
+        <div class="section-content-sobre">
+            <h1><span class="section-title">Sobre nós</h1></span>
+            <br>
+            <div class="section-text-about">
+                <p>&nbsp&nbspFinEduca é um website desenvolvido por alunos da Fundação Santo André, com o objetivo de divulgar educação financeira para jovens estudantes.</p>
+                <p>&nbsp&nbspA plataforma reúne uma série de links de artigos, notícias atualizadas, guias práticos e ferramentas interativas para tornar o aprendizado acessível e útil no dia a dia.</p>
+                <br>
+                <h2>Participantes do projeto:</h2>
+            <div class="participantes">
+                <div id="foto-participante">
+                    <img src="#">
+                    <p>Ana Clara</p>
+                </div>
+                <div id="foto-participante">
+                    <img src="#">
+                    <p>Anauê Hoppe</p>
+                </div>
+                <div id="foto-participante">
+                    <img src="assets/img/carlos.jpeg">
+                    <p>Carlos Daniel</p>
+                </div>
+                <div id="foto-participante">
+                    <img src="assets/img/lucas.png">
+                    <p>Lucas Pires</p>
+                </div>
+                <div id="foto-participante">
+                    <img src="assets/img/mayra.jpeg">
+                    <p>Mayra Sacomani</p>
+                </div>
+                <div id="foto-participante">
+                    <img src="assets/img/zonta.jpeg">
+                    <p>Victor Zonta</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="./assets/js/hamburguer-menu.js"></script>
+
+<footer>
+    <div class="portfolio-footer">
+        <p>Copyright ©&nbsp;<script>document.write(new Date().getFullYear())</script>. <b>FinEduca</b></p>
+    </div>
+</footer>
+
+</body>
+</html>
