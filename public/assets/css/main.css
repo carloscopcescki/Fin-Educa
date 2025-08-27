@@ -45,6 +45,10 @@ footer {
     height: 70px;
 }
 
+#news-cards p {
+    font-size: 16px;
+}
+
 .portfolio-footer p {
     font-family: "Poppins", sans-serif;
     color: rgb(243, 243, 243);

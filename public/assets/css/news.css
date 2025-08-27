@@ -1,13 +1,13 @@
 #news-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); /* caber em telas menores */
+  gap: clamp(12px, 2vw, 20px);
   width: 100%;
-  max-width: 1200px;
+  max-width: clamp(960px, 90vw, 1200px);
+  padding-inline: clamp(8px, 3vw, 16px);
   margin: 0 auto;
 }
 
-/* Card */
 .news-card {
   background: rgb(39, 39, 80);
   border: 1px solid #222;
@@ -20,7 +20,14 @@
 .news-thumb-wrap { display: block; }
 .news-thumb { width: 100%; height: 160px; object-fit: cover; background: #0e0e0e; }
 
-.news-content { padding: 12px; display: flex; flex-direction: column; gap: 8px; }
+.news-content {
+  font-family: "Poppins", sans-serif;
+  padding: 12px; 
+  display: flex; 
+  flex-direction: column; 
+  gap: 8px; 
+}
+
 .news-title { font-size: 1rem; line-height: 1.3; margin: 0; }
 .news-title a { color: #fff; text-decoration: none; }
 .news-title a:hover { text-decoration: underline; }
