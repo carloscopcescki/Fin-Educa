@@ -18,7 +18,7 @@ function limparCamposSimples() {
     document.getElementById('valorInicialSimples').value = 0;
     document.getElementById('taxaJurosSimples').value = 0;
     document.getElementById('tempoAnosSimples').value = 1;
-    document.getElementById('resultadoInvestido').textContent = 'Total Investido: R$ 0.00';
-    document.getElementById('resultadoJurosSimples').textContent = 'Total em Juros: R$ 0.00';
-    document.getElementById('resultadoMontanteSimples').textContent = 'Montante Total: R$ 0.00';
+    document.getElementById('resultadoInvestido').textContent = 'Total Investido: R$ 0,00';
+    document.getElementById('resultadoJurosSimples').textContent = 'Total em Juros: R$ 0,00';
+    document.getElementById('resultadoMontanteSimples').textContent = 'Montante Total: R$ 0,00';
 }
