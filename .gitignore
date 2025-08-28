@@ -1,5 +1,2 @@
 .env
-server.js
-test.html
 node_modules
-news.js

@@ -31,7 +31,7 @@ function limparCamposComposto() {
     document.getElementById('aporteMensal').value = 0;
     document.getElementById('taxaJurosComposto').value = 0;
     document.getElementById('tempoAnosComposto').value = 1;
-    document.getElementById('resultadoInvestido').textContent = 'Total Investido: R$ 0.00';
-    document.getElementById('resultadoJurosComposto').textContent = 'Total em Juros: R$ 0.00';
-    document.getElementById('resultadoMontanteComposto').textContent = 'Montante Total: R$ 0.00';
+    document.getElementById('resultadoInvestido').textContent = 'Total Investido: R$ 0,00';
+    document.getElementById('resultadoJurosComposto').textContent = 'Total em Juros: R$ 0,00';
+    document.getElementById('resultadoMontanteComposto').textContent = 'Montante Total: R$ 0,00';
 }
