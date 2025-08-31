@@ -205,6 +205,8 @@ footer {
 
 .participantes{
     display: flex;
+    align-items: center;
+    text-align: center;
     justify-content: center;
     padding: 15px;
     justify-content: space-between;
@@ -218,7 +220,7 @@ footer {
     object-fit: cover;
     width: 130px;
     height: 130px;
-    border: 3px solid rgb(21, 13, 58);
+    border: 2.5px solid #040720;
     border-radius: 50%;
 }
 
@@ -371,7 +373,7 @@ h2{
     justify-content: center;
     text-align: center;
     flex-direction: row;
-    gap: 100px;
+    gap: 80px;
 }
 
 .image label{
@@ -412,7 +414,6 @@ h2{
 
 .masthead {
     text-align: center;
-    font-style: italic;
 }
 
 @media screen and (max-width: 1560px) {
@@ -532,6 +533,12 @@ h2{
     }
 }
 
+@media screen and (max-width: 1450px) {
+    .masthead h1 {
+        padding-top: 100px;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     #landing-page-content {
         padding-right: 0;
@@ -565,8 +572,8 @@ h2{
     }
 
     #foto-participante img {
-        width: 60px;
-        height: 60px;
+        width: 100px;
+        height: 100px;
     }
 
     #foto-participante p{
@@ -576,5 +583,9 @@ h2{
     #chtl-inline-bot {
         width: 400px; 
         height: 520px;
+    }
+        
+    .masthead h1 {
+        padding-top: 80px;
     }
 }
