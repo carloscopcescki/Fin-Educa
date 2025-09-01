@@ -1,7 +1,6 @@
-export default async function handler(req, res) {
+module.exports = async (req, res) => {
   try {
     const { q = "bolsa de valores", from, to, pageSize = "4" } = req.query;
-
     const toDate = to ? new Date(to) : new Date();
     const fromDate = from ? new Date(from) : new Date(toDate.getTime() - 20 * 864e5);
     const iso = (d) => d.toISOString().split("T")[0];
@@ -33,4 +32,4 @@ export default async function handler(req, res) {
   } catch {
     return res.status(500).json({ error: "Falha ao consultar notícias" });
   }
-}
+};
