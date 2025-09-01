@@ -1,19 +1,4 @@
-import express from "express";
-import path from "path";
-import { fileURLToPath } from "url";
-import dotenv from "dotenv";
-
-dotenv.config();
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-const app = express();
-const PORT = process.env.PORT || 3000;
-
-app.use(express.static(path.join(__dirname, "public")));
-
-app.get("/api/news", async (req, res) => {
+export default async function handler(req, res) {
   try {
     const { q = "bolsa de valores", from, to, pageSize = "4" } = req.query;
 
@@ -44,10 +29,8 @@ app.get("/api/news", async (req, res) => {
       .slice(0, Number(pageSize));
 
     res.setHeader("Cache-Control", "public, max-age=60");
-    res.json({ articles: clean });
+    return res.json({ articles: clean });
   } catch {
-    res.status(500).json({ error: "Falha ao consultar notícias" });
+    return res.status(500).json({ error: "Falha ao consultar notícias" });
   }
-});
-
-app.listen(PORT, () => console.log(`API em http://localhost:${PORT}`));
+}
