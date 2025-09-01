@@ -13,22 +13,6 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.static(path.join(__dirname, "public")));
 
-const pagesPath = path.join(__dirname, "public", "pages");
-
-app.get("/", (_req, res) => {
-  res.sendFile(path.join(__dirname, "public", "index.html"));
-});
-
-app.get("/juros_compostos", (_req, res) =>
-  res.sendFile(path.join(pagesPath, "juros_compostos.html"))
-);
-app.get("/juros_simples", (_req, res) =>
-  res.sendFile(path.join(pagesPath, "juros_simples.html"))
-);
-app.get("/reserva", (_req, res) =>
-  res.sendFile(path.join(pagesPath, "reserva.html"))
-);
-
 app.get("/api/news", async (req, res) => {
   try {
     const { q = "bolsa de valores", from, to, pageSize = "4" } = req.query;
