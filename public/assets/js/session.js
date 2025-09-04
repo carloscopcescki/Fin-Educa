@@ -8,10 +8,10 @@ const getUser = () => {
   }
 };
 
-// Exemplo de proteção (se quiser obrigar login no index):
-// if (!getToken() && location.pathname === "/") {
-//   location.href = "/auth/login.html";
-// }
+
+if (!getToken() && location.pathname === "/") {
+  location.href = "./auth/login.html";
+}
 
 // Exibir nome/avatar se houver placeholders na navbar
 document.addEventListener("DOMContentLoaded", () => {
