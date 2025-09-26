@@ -2,3 +2,9 @@
 node_modules
 .vscode
 teste.html
+public/pages/acoes.html
+public/pages/criptomoedas.html
+public/pages/etfs.html
+public/pages/fundos.html
+public/pages/bdrs.html
+public/pages/tesouro_direto.html
