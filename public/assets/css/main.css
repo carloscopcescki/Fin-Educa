@@ -414,6 +414,11 @@ h2{
     font-family: "Poppins", sans-serif;
 }
 
+.site-subheading a:hover {
+    color: rgb(204, 204, 204);
+    transition: 0.5s;
+}
+
 #site-emergency {
     background-image: url('../img/reserva_background.jpg');
 }
