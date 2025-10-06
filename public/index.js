@@ -38,7 +38,7 @@ app.post("/login", async (req, res) => {
         const check = await user.findOne({ name: req.body.name })
 
         if (check.password === req.body.password) {
-            res.redirect("./index.html")
+            res.redirect("./pages/index.html")
         } else {
             res.send("Senha ou usuário inválidos")
         }
