@@ -583,8 +583,14 @@ h2{
     }
 
     .container-calc {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+    }
+
+    #section-about-calc {
+        max-width: 450px;
+        margin: 0;
+        padding-bottom: 20px;
     }
 
     iframe {
@@ -604,6 +610,11 @@ h2{
 @media screen and (max-width: 1450px) {
     .masthead h1 {
         padding-top: 100px;
+    }
+
+    .container-calc {
+        flex-direction: flex;
+        align-items: center;
     }
 }
 
