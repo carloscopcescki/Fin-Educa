@@ -156,51 +156,11 @@ footer {
     height: 520px;
 }
 
-#tickers {
-    width: 100%;
-}
-
-#tickers .container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 1500px;
-    margin: 0 auto;
-    padding: 0 10px;
-    align-items: center;
-    justify-content: center;
-    height: auto;
-}
-
 .widgets-row {
     display: flex;
-    width: 100%;
-    max-width: 1450px;
-    gap: 3px;
     align-items: flex-start;
     justify-content: center;
     flex-wrap: nowrap;
-    margin: 0 auto;
-}
-
-.widget-box {
-    display: block;
-    min-width: 0;
-}
-
-.widget-box:first-child {
-    flex: 0 0 38%;
-    max-width: 38%;
-}
-
-.widget-box:last-child {
-    flex: 0 0 62%;
-    max-width: 62%;
-}
-
-.widget-box .tradingview-widget-container {
-    display: block;
-    width: 100%;
 }
 
 .section-button{
@@ -517,13 +477,22 @@ h2{
     }
 
     #section-content-1, #section-content-2{
-        max-width: 90%;
+        max-width: 470px;
         padding-bottom: 15px;
+    }
+
+    #section-content-1 p {
+        font-size: 14px;
+    }
+
+    #section-content-2 p {
+        font-size: 14px;
     }
 
     #section-content-1-perfil, #section-content-2-perfil, #section-content-3-perfil {
         margin: 0;
         padding-bottom: 20px;
+        max-width: 350px;
     }
 
     .text h2{
@@ -599,6 +568,28 @@ h2{
 
     .tradingview-widget-container {
         bottom: 750px;
+    }
+
+    #section-content-1-perfil p {
+        font-size: 14px;
+    }
+
+    #section-content-2-perfil p {
+        font-size: 14px;
+    }
+
+    #section-content-3-perfil p {
+        font-size: 14px;
+    }
+
+    .container-calc {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    iframe {
+        width: 1200px;
+        height: 650px;
     }
 }
 

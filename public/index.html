@@ -264,7 +264,8 @@
                         <p><b>Investimentos que combinam com o perfil:</b></p>
                         <p>&nbsp•&nbspTesouro Direto</p>
                         <p>&nbsp•&nbspCDB</p>
-                        <p>&nbsp•&nbspLCI/LCA</p>
+                        <p>&nbsp•&nbspLCI</p>
+                        <p>&nbsp•&nbspLCA</p>
                         <p>&nbsp•&nbspDebêntures</p>
                         <br>
                         <p><a href="https://www.c6bank.com.br/blog/perfil-conservador" target="_blank" rel="noopener noreferrer">Veja mais sobre perfil conservador</a></p>
@@ -276,7 +277,8 @@
                         <p>&nbsp&nbspO investidor moderado é aquele que gosta da segurança porém, possui tolerância a riscos de longo prazo. Busca equilibrar a rentabilidade versus risco, optando por investimentos mais arriscados a depender da situação.</p>
                         <br>
                         <p><b>Investimentos que combinam com o perfil:</b></p>
-                        <p>&nbsp•&nbspTítulos de renda fixa (Tesouro, CDB, LCI, etc.)</p>
+                        <p>&nbsp•&nbspTítulos de renda fixa</p>
+                        <p>&nbsp•&nbspETFs</p>
                         <p>&nbsp•&nbspFundos imobiliários (FIIs)</p>
                         <p>&nbsp•&nbspFundos de Investimento</p>
                         <p>&nbsp•&nbspTítulos públicos</p>
@@ -300,6 +302,7 @@
                 </div>
             <br>
             <h2><span class="content-text">* Antes de investir, é recomendado que todo e qualquer investidor possua uma reserva de emergência.</span></h2>
+            <h3><a href="./pages/reserva.html" rel="noopener noreferrer">Simule sua reserva de emergência</a></h3>
         </div>
     </div>
 </section>
@@ -331,13 +334,13 @@
                 <div class="text">
                     <h2><span class="section-subtitle">Renda Variável</span></h2>
                     <p>&nbsp&nbspA renda variável refere-se a investimentos cujo retorno não é previsível e pode variar conforme as condições do mercado. Mais arriscado em comparação a renda fixa, mas oferece a possibilidade de retornos mais altos.</p>
-                    <p>&nbsp&nbspO investidor adquire uma participação em um ativo cujo valor pode oscilar ao longo do tempo. O desempenho desses investimentos está sujeito a fatores como desempenho econômico, decisões empresariais, mudanças políticas e outros eventos de mercado.</p>
+                    <p>&nbsp&nbspO investidor adquire uma participação em um ativo cujo valor pode oscilar ao longo do tempo. O desempenho desses investimentos está sujeito a fatores econômicos, decisões empresariais, mudanças políticas e outros eventos de mercado.</p>
                     <br>
                     <p><b>&nbsp&nbspExemplos:</b></p>
                     <p>&nbsp•&nbspAções: Participação no capital social de empresas negociadas na bolsa</p>
                     <p>&nbsp•&nbspFundos imobiliários (FIIs): Fundos que investem em imóveis ou ativos do setor imobiliário</p>
-                    <p>&nbsp•&nbspETFs: Fundos que replicam índices de mercado e são negociados na bolsa</p>
-                    <p>&nbsp•&nbspCriptomoedas: Moedas digitais descentralizadas, criadas em rede blockchain a partir de sistemas avançados de criptografia</p>
+                    <p>&nbsp•&nbspETFs: Fundos que replicam índices de mercado</p>
+                    <p>&nbsp•&nbspCriptomoedas: Moedas digitais descentralizadas, criadas em rede blockchain e criptografadas</p>
                     <br>
                     <p>Veja mais sobre Renda Variável em: <a href="https://borainvestir.b3.com.br/tipos-de-investimentos/renda-variavel/" target="_blank" rel="noopener noreferrer">&nbsp&nbspB3 - Tudo sobre Renda Variável</a></p>
                 </div>
@@ -347,403 +350,203 @@
 </section>
 
 <section id="tickers">
-  <div class="container">
+  <div class="container" id="tickers_row">
     <h1><span class="section-title">Dados do mercado</span></h1>
     <br>
     <br>
     <div class="widgets-row">
-
-      <div class="widget-box">
+        <!-- TradingView Widget BEGIN -->
         <div class="tradingview-widget-container">
-          <div class="tradingview-widget-container__widget"></div>
-          <div class="tradingview-widget-copyright">
-            <a href="https://br.tradingview.com/markets/" rel="noopener nofollow" target="_blank">
-              <span class="blue-text"></span>
-            </a>
-          </div>
-          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
-          {
-            "colorTheme": "dark",
-            "dateRange": "12M",
-            "locale": "br",
-            "largeChartUrl": "",
-            "isTransparent": true,
-            "showFloatingTooltip": false,
-            "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
-            "plotLineColorFalling": "rgba(41, 98, 255, 1)",
-            "gridLineColor": "rgba(240, 243, 250, 0)",
-            "scaleFontColor": "#DBDBDB",
-            "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
-            "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
-            "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
-            "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
-            "symbolActiveColor": "rgba(41, 98, 255, 0.12)",
-              "tabs": [
+        <div class="tradingview-widget-container__widget"></div>
+        <div class="tradingview-widget-copyright"><a href="https://br.tradingview.com/markets/" rel="noopener nofollow" target="_blank"><span class="blue-text"></span></a></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
+        {
+        "colorTheme": "dark",
+        "locale": "br",
+        "largeChartUrl": "",
+        "isTransparent": true,
+        "showSymbolLogo": true,
+        "backgroundColor": "#0F0F0F",
+        "support_host": "https://www.tradingview.com",
+        "width": 800,
+        "height": 550,
+        "symbolsGroups": [
+            {
+            "name": "Indices",
+            "symbols": [
                 {
-                "title": "Indices",
-                "symbols": [
-                    {
-                    "s": "FOREXCOM:SPXUSD",
-                    "d": "S&P 500 Index"
-                    },
-                    {
-                    "s": "FOREXCOM:NSXUSD",
-                    "d": "US 100 Cash CFD"
-                    },
-                    {
-                    "s": "FOREXCOM:DJI",
-                    "d": "Dow Jones Industrial Average Index"
-                    },
-                    {
-                    "s": "INDEX:NKY",
-                    "d": "Japan 225"
-                    },
-                    {
-                    "s": "INDEX:IBOV",
-                    "d": "",
-                    "logoid": "indices/ibovespa",
-                    "currency-logoid": "country/BR"
-                    },
-                    {
-                    "s": "BMFBOVESPA:SMLL",
-                    "d": "",
-                    "logoid": "b3-on-nm",
-                    "currency-logoid": "country/BR"
-                    },
-                    {
-                    "s": "ACTIVTRADES:GOLD",
-                    "d": "",
-                    "logoid": "metal/gold",
-                    "currency-logoid": "country/US"
-                    },
-                    {
-                    "s": "BLACKBULL:BRENT",
-                    "d": "",
-                    "logoid": "crude-oil",
-                    "currency-logoid": "country/US"
-                    }
-                ],
-                "originalTitle": "Indices"
+                "name": "FOREXCOM:SPXUSD",
+                "displayName": "S&P 500"
                 },
                 {
-                "title": "Ações",
-                "symbols": [
-                    {
-                    "s": "BMFBOVESPA:PETR4",
-                    "d": "",
-                    "logoid": "brasileiro-petrobras",
-                    "currency-logoid": "country/BR"
-                    },
-                    {
-                    "s": "BMFBOVESPA:VALE3",
-                    "d": "",
-                    "logoid": "vale",
-                    "currency-logoid": "country/BR"
-                    },
-                    {
-                    "s": "BMFBOVESPA:ITUB4",
-                    "d": "",
-                    "logoid": "itau-unibanco",
-                    "currency-logoid": "country/BR"
-                    },
-                    {
-                    "s": "BMFBOVESPA:BPAC3",
-                    "d": "",
-                    "logoid": "btgp",
-                    "currency-logoid": "country/BR"
-                    },
-                    {
-                    "s": "BMFBOVESPA:ABEV3",
-                    "d": "",
-                    "logoid": "ambev",
-                    "currency-logoid": "country/BR"
-                    },
-                    {
-                    "s": "BMFBOVESPA:BBDC3",
-                    "d": "",
-                    "logoid": "bradesco",
-                    "currency-logoid": "country/BR"
-                    },
-                    {
-                    "s": "BMFBOVESPA:WEGE3",
-                    "d": "",
-                    "logoid": "weg",
-                    "currency-logoid": "country/BR"
-                    },
-                    {
-                    "s": "BMFBOVESPA:AXIA3",
-                    "d": "",
-                    "logoid": "centrais-eletr-bras-sa",
-                    "currency-logoid": "country/BR"
-                    },
-                    {
-                    "s": "BMFBOVESPA:ITSA4",
-                    "d": "",
-                    "logoid": "itausa",
-                    "currency-logoid": "country/BR"
-                    },
-                    {
-                    "s": "BMFBOVESPA:BBAS3",
-                    "d": "",
-                    "logoid": "banco-do-brasil",
-                    "currency-logoid": "country/BR"
-                    },
-                    {
-                    "s": "BMFBOVESPA:B3SA3",
-                    "d": "",
-                    "logoid": "b3-on-nm",
-                    "currency-logoid": "country/BR"
-                    }
-                ]
+                "name": "FOREXCOM:DJI",
+                "displayName": "Dow Jones Industrial Average Index"
                 },
                 {
-                "title": "FIIs",
-                "symbols": [
-                    {
-                    "s": "BMFBOVESPA:MXRF11",
-                    "d": "",
-                    "logoid": "fii",
-                    "currency-logoid": "country/BR"
-                    },
-                    {
-                    "s": "BMFBOVESPA:XPLG11",
-                    "d": "",
-                    "logoid": "fii",
-                    "currency-logoid": "country/BR"
-                    },
-                    {
-                    "s": "BMFBOVESPA:VGHF11",
-                    "d": "",
-                    "logoid": "fii-valreiiici",
-                    "currency-logoid": "country/BR"
-                    },
-                    {
-                    "s": "BMFBOVESPA:VINO11",
-                    "d": "",
-                    "logoid": "fii-vinci-iuci-er",
-                    "currency-logoid": "country/BR"
-                    },
-                    {
-                    "s": "BMFBOVESPA:GARE11",
-                    "d": "",
-                    "logoid": "fii-guardianci-er",
-                    "currency-logoid": "country/BR"
-                    },
-                    {
-                    "s": "BMFBOVESPA:KNRI11",
-                    "d": "",
-                    "logoid": "fii",
-                    "currency-logoid": "country/BR"
-                    },
-                    {
-                    "s": "BMFBOVESPA:KNIP11",
-                    "d": "",
-                    "logoid": "fii",
-                    "currency-logoid": "country/BR"
-                    },
-                    {
-                    "s": "BMFBOVESPA:BTHF11",
-                    "d": "",
-                    "logoid": "fii",
-                    "currency-logoid": "country/BR"
-                    },
-                    {
-                    "s": "BMFBOVESPA:KNCR11",
-                    "d": "",
-                    "logoid": "fii",
-                    "currency-logoid": "country/BR"
-                    },
-                    {
-                    "s": "BMFBOVESPA:ISEN11",
-                    "d": "",
-                    "logoid": "itau-unibanco",
-                    "currency-logoid": "country/BR"
-                    }
-                ]
+                "name": "BMFBOVESPA:IFIX",
+                "displayName": "IFIX"
                 },
                 {
-                "title": "ETFs",
-                "symbols": [
-                    {
-                    "s": "AMEX:VOO",
-                    "d": "",
-                    "logoid": "vanguard",
-                    "currency-logoid": "country/US"
-                    },
-                    {
-                    "s": "NASDAQ:QQQ",
-                    "d": "",
-                    "logoid": "invesco",
-                    "currency-logoid": "country/US"
-                    },
-                    {
-                    "s": "BMFBOVESPA:BOVA11",
-                    "d": "",
-                    "logoid": "ishares",
-                    "currency-logoid": "country/BR"
-                    },
-                    {
-                    "s": "AMEX:IVV",
-                    "d": "",
-                    "logoid": "ishares",
-                    "currency-logoid": "country/US"
-                    },
-                    {
-                    "s": "AMEX:SPY",
-                    "d": "",
-                    "logoid": "spdr-sandp500-etf-tr",
-                    "currency-logoid": "country/US"
-                    },
-                    {
-                    "s": "BMFBOVESPA:IVVB11",
-                    "d": "",
-                    "logoid": "ishares",
-                    "currency-logoid": "country/BR"
-                    },
-                    {
-                    "s": "BMFBOVESPA:GOLD11",
-                    "d": "",
-                    "logoid": "firf-xp-ie-fidc",
-                    "currency-logoid": "country/BR"
-                    },
-                    {
-                    "s": "BMFBOVESPA:HASH11",
-                    "d": "",
-                    "logoid": "hashdex",
-                    "currency-logoid": "country/BR"
-                    }
-                ]
+                "name": "BMFBOVESPA:IBOV",
+                "displayName": "Indice Bovespa"
                 },
                 {
-                "title": "Stocks",
-                "symbols": [
-                    {
-                    "s": "NASDAQ:TSLA",
-                    "d": "",
-                    "logoid": "tesla",
-                    "currency-logoid": "country/US"
-                    },
-                    {
-                    "s": "NASDAQ:AAPL",
-                    "d": "",
-                    "logoid": "apple",
-                    "currency-logoid": "country/US"
-                    },
-                    {
-                    "s": "NASDAQ:NVDA",
-                    "d": "",
-                    "logoid": "nvidia",
-                    "currency-logoid": "country/US"
-                    },
-                    {
-                    "s": "NASDAQ:MSFT",
-                    "d": "",
-                    "logoid": "microsoft",
-                    "currency-logoid": "country/US"
-                    },
-                    {
-                    "s": "NASDAQ:AMZN",
-                    "d": "",
-                    "logoid": "amazon",
-                    "currency-logoid": "country/US"
-                    },
-                    {
-                    "s": "NASDAQ:META",
-                    "d": "",
-                    "logoid": "meta-platforms",
-                    "currency-logoid": "country/US"
-                    },
-                    {
-                    "s": "NASDAQ:AMD",
-                    "d": "",
-                    "logoid": "advanced-micro-devices",
-                    "currency-logoid": "country/US"
-                    },
-                    {
-                    "s": "NASDAQ:GOOGL",
-                    "d": "",
-                    "logoid": "alphabet",
-                    "currency-logoid": "country/US"
-                    },
-                    {
-                    "s": "NASDAQ:INTC",
-                    "d": "",
-                    "logoid": "intel",
-                    "currency-logoid": "country/US"
-                    },
-                    {
-                    "s": "NYSE:BAC",
-                    "d": "",
-                    "logoid": "bank-of-america",
-                    "currency-logoid": "country/US"
-                    },
-                    {
-                    "s": "NYSE:MMM",
-                    "d": "",
-                    "logoid": "3m",
-                    "currency-logoid": "country/US"
-                    }
-                ]
+                "name": "BMFBOVESPA:IDIV",
+                "displayName": "Dividendos"
                 }
-            ],
-            "support_host": "https://www.tradingview.com",
-            "backgroundColor": "#0f0f0f",
-            "width": "80%",
-            "height": "550",
-            "showSymbolLogo": true,
-            "showChart": true
-          }
-          </script>
+            ]
+            },
+            {
+            "name": "Ações",
+            "symbols": [
+                {
+                "name": "BMFBOVESPA:PETR4",
+                "displayName": "Petrobras"
+                },
+                {
+                "name": "BMFBOVESPA:VALE3",
+                "displayName": "Vale"
+                },
+                {
+                "name": "BMFBOVESPA:ITUB4",
+                "displayName": "Itau Unibanco"
+                },
+                {
+                "name": "BMFBOVESPA:BBDC3",
+                "displayName": "Banco Bradesco"
+                },
+                {
+                "name": "BMFBOVESPA:WEGE3",
+                "displayName": "WEG"
+                },
+                {
+                "name": "BMFBOVESPA:ABEV3",
+                "displayName": "Ambev"
+                },
+                {
+                "name": "BCBA:VIVT3",
+                "displayName": "VIVO Telefonica"
+                },
+                {
+                "name": "BMFBOVESPA:B3SA3",
+                "displayName": "B3"
+                },
+                {
+                "name": "BMFBOVESPA:KLBN11",
+                "displayName": "Klabin"
+                },
+                {
+                "name": "BMFBOVESPA:AXIA3",
+                "displayName": "AXIA Energia"
+                },
+                {
+                "name": "BMFBOVESPA:TAEE3",
+                "displayName": "Taesa"
+                },
+                {
+                "name": "BMFBOVESPA:SANB3",
+                "displayName": "Banco Santander"
+                },
+                {
+                "name": "BMFBOVESPA:BBAS3",
+                "displayName": "Banco do Brasil"
+                }
+            ]
+            },
+            {
+            "name": "Fundos Imobiliários",
+            "symbols": [
+                {
+                "name": "BMFBOVESPA:MXRF11",
+                "displayName": "Maxi Renda Fundo Invest"
+                },
+                {
+                "name": "BMFBOVESPA:GARE11",
+                "displayName": "Fundo De Investimento Imobiliario Guardian Logistica"
+                },
+                {
+                "name": "BMFBOVESPA:XPML11",
+                "displayName": "XP Malls FII"
+                },
+                {
+                "name": "BMFBOVESPA:HGLG11",
+                "displayName": "CSHG LOGÍSTICA FDO INV IMOB"
+                },
+                {
+                "name": "BMFBOVESPA:VGHF11",
+                "displayName": "Valora Hedge Fund Fundo De Investimento Imobiliário"
+                },
+                {
+                "name": "BMFBOVESPA:KNIP11",
+                "displayName": "Kinea Indices Precos Fundo Investimento Imobiliario"
+                },
+                {
+                "name": "BMFBOVESPA:KNCR11",
+                "displayName": "Kinea Rendimentos Imobiliários Fundo de Investimento"
+                },
+                {
+                "name": "BMFBOVESPA:BTAL11",
+                "displayName": "BTG Pactual Agro Logística"
+                },
+                {
+                "name": "BMFBOVESPA:RZAT11",
+                "displayName": "RIZA ARCTIUM REAL ESTATE REAL ESTATE"
+                }
+            ]
+            },
+            {
+            "name": "Moedas",
+            "symbols": [
+                {
+                "name": "FX_IDC:USDBRL",
+                "displayName": ""
+                },
+                {
+                "name": "FX_IDC:BRLEUR",
+                "displayName": ""
+                },
+                {
+                "name": "FX_IDC:BRLARS",
+                "displayName": ""
+                },
+                {
+                "name": "FX_IDC:BRLCLP",
+                "displayName": ""
+                }
+            ]
+            },
+            {
+            "name": "Criptomoedas",
+            "symbols": [
+                {
+                "name": "BINANCE:BTCBRL",
+                "displayName": "Bitcoin"
+                },
+                {
+                "name": "BINANCE:SOLBRL",
+                "displayName": "Solana"
+                },
+                {
+                "name": "OKX:ETHBRL",
+                "displayName": "Ethereum"
+                },
+                {
+                "name": "OKX:XRPBRL",
+                "displayName": "XRP"
+                },
+                {
+                "name": "BINANCE:DOGEBRL",
+                "displayName": "Dogecoin"
+                }
+            ]
+            }
+        ]
+        }
+        </script>
         </div>
-      </div>
-
-      <div class="widget-box">
-        <div class="tradingview-widget-container">
-          <div class="tradingview-widget-container__widget"></div>
-          <div class="tradingview-widget-copyright">
-            <a href="https://br.tradingview.com/markets/cryptocurrencies/prices-all/" rel="noopener nofollow" target="_blank">
-              <span class="blue-text"></span>
-            </a>
-          </div>
-          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
-          {
-            "defaultColumn": "overview",
-            "screener_type": "crypto_mkt",
-            "displayCurrency": "BTC",
-            "colorTheme": "dark",
-            "isTransparent": true,
-            "locale": "br",
-            "width": "100%",
-            "height": 550
-          }
-          </script>
-        </div>
-      </div>
-
     </div>
-  </div>
-</section>
-
-<!-- Melhores ativos -->
-<section id="ativos">
-    <div class="container">
-        <div class="section-content">
-            <div id="section-content-1">
-                <div class="text">
-                    <h2><span class="section-subtitle">As Ações mais buscadas</span></h2>
-                    <br>
-                    <p><a href="https://investidor10.com.br/acoes/" target="_blank" rel="noopener noreferrer">Veja mais ações clicando aqui</a></p>
-                </div>
-            </div>
-            <div id="section-content-2">
-                <div class="text">
-                    <h2><span class="section-subtitle">Os FIIs mais buscados</span></h2>
-                    <br>
-                    <p><a href="https://investidor10.com.br/fiis/" target="_blank" rel="noopener noreferrer">Veja mais FIIs clicando aqui</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
+    <h3><a href="./pages/monitor_ativos.html" rel="noopener noreferrer">Clique aqui para obter mais detalhes sobre cada ativo</a></h3>
+    <br>
 </section>
 
 <!-- Seção Ferramentas -->
